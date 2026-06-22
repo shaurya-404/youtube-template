@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DTube Player</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .player-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .player-container video {
+            width: 100%;
+            border-radius: 8px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <h2 id="video-title">Loading...</h2>
+        
+        <video id="main-player" controls autoplay>
+            <source id="video-source" src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="video-controls" style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+            
+            <div>
+                <button id="like-btn" style="background-color: #3b82f6; width: auto; padding: 10px 20px; margin-right: 10px; cursor: pointer;">👍 Like</button>
+                <span id="like-count" style="color: #94a3b8; font-weight: bold;">0 Likes</span>
+            </div>
+            
+            <div>
+                <span id="sub-count" style="color: #94a3b8; font-weight: bold; margin-right: 15px;">0 Subscribers</span>
+                <button id="subscribe-btn" style="background-color: #ef4444; width: auto; padding: 10px 20px; cursor: pointer;">🔔 Subscribe</button>
+            </div>
+
+        </div>
+        
+        <br>
+        <a href="studio.html">⬅ Back to Trending</a>
+    </div>
+
+    <script src="videoplay.js"></script>
+</body>
+</html>

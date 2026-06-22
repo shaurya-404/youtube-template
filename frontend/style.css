@@ -1,0 +1,200 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#message-box {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    margin-top: 80px; 
+}
+
+.video-card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.video-info {
+    padding: 15px;
+}
+
+.video-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+.stats {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.video-card {
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+.trending-header {
+    position: fixed;  
+    top: 0; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #0f172a; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+    z-index: 100;         
+    
+    padding: 15px 0;
+    margin: 0;
+}
+
+.trending-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.player-container {
+            width: 90vw;           
+            max-width: 1400px;    
+            margin: 80px auto;
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+}
+.trending-header {
+    position: fixed;  
+    top: 0; 
+    left: 0;
+    width: 100%;
+    
+    /* NEW: Flexbox magic to space out the title and button */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-sizing: border-box; /* Keeps padding from stretching the screen width */
+    
+    background-color: #0f172a; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+    z-index: 100;         
+    padding: 15px 30px;
+    margin: 0;
+}
+
+.trending-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Style the new button */
+.logout-btn {
+    background-color: #ef4444; /* Red color for logging out */
+    width: auto;
+    padding: 8px 20px;
+    font-size: 1rem;
+}
+
+.logout-btn:hover {
+    background-color: #dc2626; /* Slightly darker red on hover */
+}
+
+.upload-container {
+    background-color: #1e293b;
+    padding: 20px;
+    margin: 100px auto 20px auto; /* Pushes it down below the fixed header */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+/* Navigation Bar Styles */
+.nav-group {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    background-color: #2563eb;
+}

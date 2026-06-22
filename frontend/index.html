@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTube Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="container">
+            <div id="message-box" style="display: none;"></div>
+
+            <div id="login-section" class="form-section">
+                <h2>Login to DTube</h2>
+                <form id="loginForm">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+                <p>
+                    <a href="#" onclick="showSection('forgot-section')">Forgot Password?</a> | 
+                    <a href="#" onclick="showSection('signup-section')">Create an Account</a>
+                </p>
+            </div>
+
+            <div id="signup-section" class="form-section" style="display: none;">
+                <h2>Create an Account</h2>
+                <form id="signupForm">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p><a href="#" onclick="showSection('login-section')">Back to Login</a></p>
+            </div>
+
+            <div id="forgot-section" class="form-section" style="display: none;">
+                <h2>Reset Password</h2>
+                <p style="font-size: 0.8rem; color: #ccc;">(For this beginner version, just enter your email and a new password!)</p>
+                <form id="forgotForm">
+                    <input type="email" id="forgot-email" placeholder="Your Email" required>
+                    <input type="password" id="forgot-new-password" placeholder="New Password" required>
+                    <button type="submit">Reset Password</button>
+                </form>
+                <p><a href="#" onclick="showSection('login-section')">Back to Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>

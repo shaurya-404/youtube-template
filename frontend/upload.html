@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="trending-header">
+        <h1>📤 Studio Upload</h1>
+        <div class="nav-group">
+            <a href="studio.html" class="nav-btn">← Back to Trending</a>
+        </div>
+    </div>
+    <div class="upload-container" style="margin-top: 120px;">
+        <h2>Upload New Video</h2>
+        <form id="uploadForm">
+            <input type="text" id="upload-title" placeholder="Video Title" required>
+            <input type="file" id="upload-file" accept="video/mp4" required style="margin: 15px 0;">
+            <button type="submit" id="upload-btn" style="background-color: #10b981;">Publish Video</button>
+        </form>
+        <div id="upload-status" style="margin-top: 15px;"></div>
+    </div>
+    <script src="upload.js"></script>
+</body>
+</html>
